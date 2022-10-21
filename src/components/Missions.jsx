@@ -2,21 +2,24 @@ import React, { Component } from 'react';
 import Title from './Title';
 import missions from '../data/missions';
 import MissionCard from './MissionCard';
+import '../style/Missions.scss';
 
 export default class Missions extends Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="Missions">
         <Title headline="Missões" />
-        {missions.map(({ name, year, country, destination }) => (
-          <MissionCard
-            key={ name }
-            name={ name }
-            year={ year }
-            country={ country }
-            destination={ destination }
-          />
-        ))}
+        <div id="Missoes">
+          {missions.map(({ name, year, country, destination }) => (
+            <MissionCard
+              key={ name }
+              name={ name }
+              year={ year }
+              country={ country }
+              destination={ destination }
+            />
+          ))}
+        </div>
       </div>
     );
   }

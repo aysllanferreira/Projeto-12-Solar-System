@@ -1,0 +1,40 @@
+.MissionCard{
+  border: solid 1px white;
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: rgba(44, 44, 44, 0.603);
+
+  .Titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  hr{
+    margin: 1.3rem 0;
+  }
+
+  p{
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .datas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    p{
+      font-size: 16px;
+    }
+   
+    
+    .separaAi{
+      display: flex;
+      justify-content: center;
+      
+    }
+  }
+}

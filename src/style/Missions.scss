@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.Missions{
+  width: 1200px;
+  margin: 0 auto;
+  border: solid 1px white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 6rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  font-family: 'Righteous', cursive;
+
+  #Missoes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
