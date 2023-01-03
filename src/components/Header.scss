@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.Header{
+  text-align: center;
+  margin-bottom: 8rem;
+  position: relative;
+  margin-top: 6rem;
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+
+
+
+  &::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%) skewX(-45deg);
+  }
+
+}

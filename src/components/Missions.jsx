@@ -1,25 +1,28 @@
-import React, { Component } from 'react';
-import Title from './Title';
-import missions from '../data/missions';
+import React from 'react';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
 import MissionCard from './MissionCard';
+import missions from '../data/missions';
+import Title from './Title';
 
-export default class Missions extends Component {
-  render() {
-    return (
-      <div data-testid="missions" className="Missions">
-        <Title headline="Missões" />
-        <div id="Missoes">
-          {missions.map(({ name, year, country, destination }) => (
+function Missions() {
+  return (
+    <Box sx={ { flexGrow: 1 } }>
+      <Title headline="Missões" />
+      <Grid container spacing={ 3 }>
+        {missions.map(({ name, year, country, destination }) => (
+          <Grid xs={ 12 } sm={ 6 } key={ name }>
             <MissionCard
-              key={ name }
               name={ name }
               year={ year }
               country={ country }
               destination={ destination }
             />
-          ))}
-        </div>
-      </div>
-    );
-  }
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  );
 }
+
+export default Missions;

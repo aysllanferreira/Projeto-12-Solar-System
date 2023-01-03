@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Grid from '@mui/material/Grid';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
 
-export default class SolarSystem extends Component {
-  render() {
-    return (
-      <div data-testid="solar-system" className="SolarSystem">
-        <div className="Planeta">
-          {planets.map(({ name, image }) => (
-            <PlanetCard key={ name } planetName={ name } planetImage={ image } />
-          ))}
-        </div>
-      </div>
-    );
-  }
+function SolarSystem() {
+  return (
+    <Grid container spacing={ 1 }>
+      {planets.map(({ name, image }) => (
+        <PlanetCard key={ name } planetName={ name } planetImage={ image } />
+      ))}
+    </Grid>
+  );
 }
+
+export default SolarSystem;

@@ -1,23 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import './PlanetCard.scss';
+import Grid from '@mui/material/Grid';
 
-export default class PlanetCard extends Component {
-  render() {
-    const { planetName, planetImage } = this.props;
-    return (
-      <div data-testid="planet-card" className="PlanetCard">
-        <p data-testid="planet-name" className="PlanetStatus PlanetPar">{planetName}</p>
+function PlanetCard({ planetName, planetImage }) {
+  return (
+    <Grid xs={ 12 } sm={ 6 } md={ 3 } lg={ 3 }>
+      <Box
+        sx={ {
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: 1,
+        } }
+      >
+        <Typography
+          className="PlanetCard__title"
+          variant="h5"
+          component="h2"
+          gutterBottom
+        >
+          {planetName}
+
+        </Typography>
         <img
           src={ planetImage }
           alt={ `Planeta ${planetName}` }
           className="PlanetStatus"
         />
-      </div>
-    );
-  }
+      </Box>
+    </Grid>
+  );
 }
 
 PlanetCard.propTypes = {
   planetName: PropTypes.string.isRequired,
   planetImage: PropTypes.string.isRequired,
 };
+
+export default PlanetCard;

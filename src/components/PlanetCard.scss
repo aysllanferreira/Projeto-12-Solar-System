@@ -1,0 +1,10 @@
+img{
+  width: 250px;
+
+  // scale effect
+  transition: transform 0.5s;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}

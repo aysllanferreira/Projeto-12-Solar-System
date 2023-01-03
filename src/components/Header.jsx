@@ -1,11 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import StarIcon from '@mui/icons-material/Star';
+import './Header.scss';
 
-export default class Header extends Component {
-  render() {
-    return (
-      <header className="Header">
-        <h1>Solar System</h1>
-      </header>
-    );
-  }
+function Header() {
+  return (
+    <Box
+      align="center"
+      marginBottom={ 5 }
+      className="Header"
+    >
+      <Typography
+        variant="h4"
+        component="h1"
+        gutterBottom
+      >
+        <StarIcon />
+        {' '}
+        Solar System
+        {' '}
+        <StarIcon />
+      </Typography>
+    </Box>
+  );
 }
+
+export default Header;
