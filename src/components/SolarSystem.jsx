@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import planets from '../data/planets';
 import PlanetCard from './PlanetCard';
-import '../style/SolarSystem.scss';
 
 export default class SolarSystem extends Component {
   render() {

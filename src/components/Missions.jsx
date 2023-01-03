@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Title from './Title';
 import missions from '../data/missions';
 import MissionCard from './MissionCard';
-import '../style/Missions.scss';
 
 export default class Missions extends Component {
   render() {

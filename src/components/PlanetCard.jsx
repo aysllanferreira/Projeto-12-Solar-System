@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../style/PlanetCard.scss';
 
 export default class PlanetCard extends Component {
   render() {

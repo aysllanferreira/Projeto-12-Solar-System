@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../style/MissionCard.scss';
 
 export default class MissionCard extends Component {
   render() {
