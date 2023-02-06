@@ -1,37 +1,37 @@
-const USA = 'Estados Unidos';
+const USA = 'USA';
 const URSS = 'URSS';
-const INTERESTELAR = 'Espaço interestelar';
+const INTERESTELAR = 'Interstellar Space';
 
 const Missions = [
   {
     name: 'Mariner 2',
     year: '1962',
     country: USA,
-    destination: 'Vênus',
+    destination: 'Venus',
   },
   {
     name: 'Venera 4',
     year: '1967',
     country: URSS,
-    destination: 'Vênus',
+    destination: 'Venus',
   },
   {
     name: 'Mariner 5',
     year: '1967',
     country: USA,
-    destination: 'Vênus',
+    destination: 'Venus',
   },
   {
     name: 'Apollo 11',
     year: '1969',
     country: USA,
-    destination: 'Lua',
+    destination: 'Moon',
   },
   {
     name: 'Mariner 10',
     year: '1973',
     country: USA,
-    destination: 'Mercúrio e Vênus',
+    destination: 'Mercury e Venus',
   },
   {
     name: 'Voyager 1',
@@ -43,84 +43,84 @@ const Missions = [
     name: 'Venera 16',
     year: '1983',
     country: URSS,
-    destination: 'Vênus',
+    destination: 'Venus',
   },
   {
     name: 'Phobos 1',
     year: '1988',
     country: URSS,
-    destination: 'Marte',
+    destination: 'Mars',
   },
   {
     name: 'Phobos 2',
     year: '1988',
     country: URSS,
-    destination: 'Marte',
+    destination: 'Mars',
   },
   {
     name: 'Galileo',
     year: '1989',
     country: USA,
-    destination: 'Júpiter',
+    destination: 'Jupiter',
   },
   {
     name: 'Mars Pathfinder',
     year: '1996',
     country: USA,
-    destination: 'Marte',
+    destination: 'Mars',
   },
   {
     name: 'Cassini-Huygens',
     year: '1997',
-    country: 'Estados Unidos e Europa',
-    destination: 'Saturno',
+    country: 'USA and Europe',
+    destination: 'Saturn',
   },
   {
     name: 'Nozomi (Planeta B)',
     year: '1998',
-    country: 'Japão',
-    destination: 'Marte',
+    country: 'Japan',
+    destination: 'Mars',
   },
   {
     name: 'Estação Internacional Espacial',
     year: '1998',
-    country: 'Estados Unidos e Rússia',
-    destination: 'Órbita terrestre',
+    country: 'USA and Russia',
+    destination: 'Earth Orbit',
   },
   {
     name: 'Mars Polar Lander',
     year: '1999',
     country: USA,
-    destination: 'Marte',
+    destination: 'Mars',
   },
   {
     name: '2001 Mars Odyssey',
     year: '2001',
     country: USA,
-    destination: 'Marte',
+    destination: 'Mars',
   },
   {
     name: 'Genesis',
     year: '2001',
     country: USA,
-    destination: 'Terra',
+    destination: 'Earth',
   },
   {
     name: 'MESSENGER',
     year: '2004',
     country: USA,
-    destination: 'Mercúrio',
+    destination: 'Mercury',
   },
   {
-    name: 'Telescópio Espacial Kepler',
+    name: 'Kepler Space Telescope',
     year: '2009',
     country: USA,
     destination: INTERESTELAR,
   },
   {
-    name: 'Telescópio Espacial James Webb',
+    name: 'James Webb Space Telescope',
     year: '2021',
-    country: 'Estados Unidos, União Europeia e Canadá',
+    country: 'USA, UE and Canada',
     destination: INTERESTELAR,
   },
 ];

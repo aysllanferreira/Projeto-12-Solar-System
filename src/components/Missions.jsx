@@ -8,7 +8,7 @@ import Title from './Title';
 function Missions() {
   return (
     <Box sx={ { flexGrow: 1 } }>
-      <Title headline="Missões" />
+      <Title headline="Missions" />
       <Grid container spacing={ 3 }>
         {missions.map(({ name, year, country, destination }) => (
           <Grid xs={ 12 } sm={ 6 } key={ name }>
